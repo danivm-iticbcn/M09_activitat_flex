@@ -1,0 +1,46 @@
+/*EXERCICI 8*/
+span {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    display: block;
+    font-size: 1.5em;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+ }
+ div{
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.nou{
+    height: 91.5vh;
+}
+/*COLORS*/
+.c1{
+    background-color: #23606E;
+}
+.c2{
+    background-color: #FACFCE;
+}
+.c3{
+    background-color: #008F8C;
+}
+.c4{
+    background-color: #015958;
+}
+.c5{
+    background-color: #023535;
+}

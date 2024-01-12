@@ -1,0 +1,33 @@
+/*EXERCICI 1*/
+span {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    display: block;
+    font-size: 1.5em;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+ }
+div{
+    border: 1px solid black;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+/*COLORS*/
+.c1{
+    background-color: #23606E;
+}
+.c2{
+    background-color: #FACFCE;
+}
+.c3{
+    background-color: #008F8C;
+}
+.c4{
+    background-color: #015958;
+}
+.c5{
+    background-color: #023535;
+}

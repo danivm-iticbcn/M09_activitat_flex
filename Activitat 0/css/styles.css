@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    position: sticky;
+    top: 0px
+}
+.container{
+    border: 1px solid blue;
+    display: flex;
+    padding: 20px;
+}
+main{
+    border: 1px solid brown;
+    padding: 20px;
+}
+aside{
+    border: 1px solid green;
+}
+article{
+    border: 1px solid pink;
+    
+}
+h2{
+    border: 1px solid green;
+    margin: 20px;
+}
+p{
+    border: 1px solid green;
+    margin: 20px;
+}
+
+.menu{
+    background-color: blue;
+    color: white;
+    width: 200px;
+    border: 1px solid red;
+    margin: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container_img > img{
+    width: 100%;
+}
