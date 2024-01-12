@@ -9,7 +9,6 @@ span {
     width: 3em;
  }
 div{
-    background-color: blue;
     border: 1px solid black;
 }
 section{
@@ -21,4 +20,23 @@ div:hover{
         rotate: 50deg;
         transition-duration: 1s;
     }
+}
+img{
+    display: none;
+}
+/*COLORS*/
+.c1{
+    background-color: #23606E;
+}
+.c2{
+    background-color: #FACFCE;
+}
+.c3{
+    background-color: #008F8C;
+}
+.c4{
+    background-color: #015958;
+}
+.c5{
+    background-color: #023535;
 }
