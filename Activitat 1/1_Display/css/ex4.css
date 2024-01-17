@@ -1,4 +1,4 @@
-/*EXERCICI 6*/
+/*EXERCICI 4*/
 span {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 50%;
@@ -7,24 +7,18 @@ span {
     line-height: 3em;
     text-align: center;
     width: 3em;
-    height: 3em;
  }
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ /*CANVIAR MIDES*/
+ div{
     border: 1px solid black;
-    width: 24vw;
-    height: 150px;
+    width: 150px;
+    height: 150px; 
 }
+/*FER BAIXAR ELEMENTS*/
 section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1vh;
-}
-.cinc{
-    width: 100vw;
 }
 /*COLORS*/
 .c1{

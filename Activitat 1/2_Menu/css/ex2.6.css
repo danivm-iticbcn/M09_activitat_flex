@@ -1,0 +1,40 @@
+/*SEPARAR ELS DOS SECTIONS*/
+#links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+/*CANVIAR LA DIRECIO DEL SECTION AMB MES LINKS*/
+.l{
+    display: flex;
+    flex-direction: row;
+}
+/*CAIXES*/
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+}
+/*TEXT*/
+span{
+    color: white;
+    padding: 15px;
+}
+/*COLORS*/
+.c1{
+    background-color: #23606E;
+}
+.c2{
+    background-color: #FACFCE;
+}
+.c3{
+    background-color: #008F8C;
+}
+.c4{
+    background-color: #015958;
+}
+.c5{
+    background-color: #023535;
+}

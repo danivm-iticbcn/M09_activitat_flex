@@ -1,4 +1,4 @@
-/*EXERCICI 3*/
+/*EXERCICI 5*/
 span {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 50%;
@@ -7,15 +7,24 @@ span {
     line-height: 3em;
     text-align: center;
     width: 3em;
+    height: 3em;
  }
+ /*CENTRAR CONTINGUT*/
  div{
     border: 1px solid black;
+    width: 200px;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+/*AFEGIR ESPAIS ENTRE DIVS AMB L'ATRIBUT GAP*/
 section{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vh;
 }
 /*COLORS*/
 .c1{

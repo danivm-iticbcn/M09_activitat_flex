@@ -9,9 +9,11 @@ span {
     width: 3em;
     height: 3em;
  }
+ /*OCULTAR ELS DIVS QUE NO ENS INTERESEN*/
  div{
     display: none;
  }
+ /*MOSTRAR ELS QUE SI I DE FORMA CENTRADA*/
  .e7{
     display: flex;
     justify-content: center;

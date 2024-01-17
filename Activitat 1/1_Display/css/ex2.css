@@ -11,6 +11,7 @@ span {
  div{
     border: 1px solid black;
 }
+/*CANVIAR EL SENTIT A ROW*/
 section{
     display: flex;
     flex-direction: row;

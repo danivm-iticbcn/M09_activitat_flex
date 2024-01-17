@@ -1,4 +1,4 @@
-/*EXERCICI 4*/
+/*EXERCICI 8*/
 span {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 50%;
@@ -12,12 +12,21 @@ span {
     border: 1px solid black;
     width: 150px;
     height: 150px;
-    
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw
 }
 section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 100vh;
+}
+/*CANVIEM L'ULTIM DIV*/
+.nou{
+    height: 91.5vh;
 }
 /*COLORS*/
 .c1{

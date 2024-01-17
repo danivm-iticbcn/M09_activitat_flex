@@ -1,4 +1,4 @@
-/*EXERCICI 1*/
+/*EXERCICI 6*/
 span {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 50%;
@@ -7,23 +7,25 @@ span {
     line-height: 3em;
     text-align: center;
     width: 3em;
+    height: 3em;
  }
 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
+    width: 24vw;
+    height: 150px;
 }
 section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vh;
 }
-/*GIRAR EL NUMERO*/
-div:hover{
-    span{
-        rotate: 50deg;
-        transition-duration: 1s;
-    }
-}
-img{
-    display: none;
+/*ELEMENT 5 OCUPI TOTA L'AMPLADA*/
+.cinc{
+    width: 100vw;
 }
 /*COLORS*/
 .c1{

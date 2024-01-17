@@ -1,4 +1,4 @@
-/*EXERCICI 5*/
+/*EXERCICI 3*/
 span {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 50%;
@@ -7,22 +7,16 @@ span {
     line-height: 3em;
     text-align: center;
     width: 3em;
-    height: 3em;
  }
+ /*AFEGIR UNA ALTRUA DE 200PX*/
  div{
     border: 1px solid black;
-    width: 200px;
     height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
 section{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2vh;
 }
 /*COLORS*/
 .c1{
