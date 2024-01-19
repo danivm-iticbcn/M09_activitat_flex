@@ -21,11 +21,11 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1vh;
+    gap: 1.5vh;
 }
 /*ELEMENT 5 OCUPI TOTA L'AMPLADA*/
 .cinc{
-    width: 100vw;
+    width:100vw;
 }
 /*COLORS*/
 .c1{

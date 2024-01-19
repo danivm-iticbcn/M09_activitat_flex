@@ -10,23 +10,23 @@ span {
  }
  div{
     border: 1px solid black;
-    width: 150px;
-    height: 150px;
-    margin: 5px;
+    height: 23vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33vw
+    width: 32vw
 }
 section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    gap: 1vh;
 }
 /*CANVIEM L'ULTIM DIV*/
 .nou{
-    height: 91.5vh;
+    height: 98.2%;
 }
 /*COLORS*/
 .c1{

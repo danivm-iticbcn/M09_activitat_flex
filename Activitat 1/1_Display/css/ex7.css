@@ -29,6 +29,7 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100%;
  }
  /*COLORS*/
 .c1{
