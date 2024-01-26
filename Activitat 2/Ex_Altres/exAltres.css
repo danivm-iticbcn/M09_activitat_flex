@@ -1,0 +1,71 @@
+span {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    display: block;
+    font-size: 1.5em;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+    height: 3em;
+ }
+ /*Maquetejar amb grid-template-area*/
+section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "un un dos dos"
+                         "tres quatre dos dos"
+                         "tres cinc sis set"
+                         "tres buit buit set"
+                         "nou nou nou nou";
+    gap: 20px 10px;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Imatge*/
+img{
+    width: 70;
+    height: 50px;
+    padding: 0;
+}
+
+/*Ampliar caixa 7 i 8 amb grid-area*/
+/*COLORS I AREA*/
+.e1{
+    background-color: #23606E;
+    grid-area: un;
+}
+.e2{
+    background-color: #FACFCE;
+    grid-area: dos;
+}
+.e3{
+    background-color: #008F8C;
+    grid-area: tres;
+}
+.e4{
+    background-color: #015958;
+    grid-area: quatre;
+}
+.e5{
+    background-color: #023535;
+    grid-area: cinc;
+}
+.e6{
+    background-color: #23606E;
+    grid-area: sis;
+}
+.e7{
+    background-color: #FACFCE;
+    grid-area: set;
+}
+.e8{
+    background-color: #008F8C;
+    grid-area: buit;
+}
+.e9{
+    background-color: #015958;
+    grid-area: nou;
+}
