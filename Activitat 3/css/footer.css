@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: grey;
+    color: white;
+}
+footer > div{
+    width: 3vw;
+}
+footer > div > img{
+    width: 100%;
+}
