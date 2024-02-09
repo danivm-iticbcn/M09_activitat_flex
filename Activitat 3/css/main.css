@@ -1,74 +1,52 @@
-/*TITOL*/
-.titol{
-    height: 100vh;
-}
-.titol > div{
-    border: solid black 2px;
-    width: 30vw;
-    padding: 10px;
-    position: absolute;
-    top: 32vh;
-    left: 22.5vw;
-    font-size: 20px;
-}
-h1{
-    font-size: 40px;
-    text-decoration: bold;
-    color: black;
-}
-.titol > img{
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-}
-/*SOBRE NOSALTRES*/
-/*CAIXA GENERAL (SECTION)*/
-.sn{
+/*Donem format al main*/
+main{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 100px;
-    height: 75vh;
-}
-/*SEPAREM I ORDENEM ELS DOS DIVS*/
-.snd{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1vw;
-    row-gap: 1000px;
-}
-/*AJUSTEM EL TITOL I DIVS*/
-.sn > h2{
-    margin-left: 24vw;
-    margin-bottom: 20px;
-}
-.snd > div{
-    width: 35vw;
-    height: 15vh;
-    display: flex;
     align-items: center;
-    margin-top: 10px;
-    font-size: 1em;
-}
-/*Imatges*/
-.snd > img{
-    height: auto;
-    width: 15vw;
-    border-radius: 2%;
 }
 /**/
-/*MENU AMB GRID*/
-.menu{
-    margin-left: 24vw;
-    margin-bottom: 150px;
+/*************SOBRE NOSALTRES**************/
+/*CAIXA GENERAL (SECTIONS)*/
+.sections{
+    width: 60vw;
+    margin-bottom: 11vh;
 }
+/*H2 (TOTS)*/
+h2{
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 6vh;
+}
+/*ORDENEM AMB FLOAT*/
+.img-nosaltres1{
+    width: 18vw;
+    float: left;
+}
+.img-nosaltres2{
+    width: 18vw;
+    float: right;
+}
+.info1{
+    float: right;
+    width: 40vw;
+    height: 32vh;
+    margin-top: 3vh;
+}
+.info2{
+    float: left;
+    width: 40vw;
+    margin-top: 4vh;
+}
+.img-nosaltres1 > img, .img-nosaltres2 > img{
+    width: 100%;
+    border-radius: 4%;
+}
+
+/******************MENU*****************/
 /*CLASSIFIQUEM LES ARIES*/
 .menucontainer{
     display: grid;
-    grid-template-columns: 12% 27% 27%;
+    grid-template-columns: 11% 43.2% 43.2%;
     grid-template-areas: "elmenu elmenu elmenu"
                          "elmenu1 contm1 contm1"
                          "elmenu1 img1c1 img2c1"
@@ -97,6 +75,7 @@ h1{
 }
 .img1c1{
     grid-area: img1c1;
+    display: block;
 }
 .img2c1{
     grid-area: img2c1;
@@ -119,28 +98,41 @@ h1{
 }
 .menucontainer > div > img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-.h4{
-    padding: 0;
-    margin: 0;
+.menucontainer > div > h4{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.menucontainer > div > span{
+    font-size: 1em;
 }
 
 
 /**/
-/*GALERIA*/
-.galeriacontainer{
-    margin-left: 24vw;
-}
+/**************************GALERIA*************************/
 .galeria{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px 10px;
+    gap: 25px 18px;
     margin-bottom: 100px;
-    width: 55vw;
 }
 .fotogaleria{
-    border: solid black 1px;
-    width: 13vw;
+    width: 14vw;
+}
+/*Imatges de la galeria*/
+.amanida{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+.amanida:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    filter: brightness(80%);
+}
+.fosc{
+    filter: brightness(60%);
 }

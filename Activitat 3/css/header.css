@@ -1,12 +1,16 @@
+/*Quitem els margens*/
 body{
     margin: 0;
     font-family: sans-serif;
 }
+/*Caixa pare*/
 header{
     position: sticky;
     top: 0;
     background-color: black;
+    z-index: 1;
 }
+/*El menu senser*/
 nav{
     display: flex;
     flex-direction: row;
@@ -14,13 +18,18 @@ nav{
     justify-content: end;
     margin-right: 10px;
 }
+/*Contenidors del text*/
 nav > div{
-    font-size: 1.3em;
     margin: 10px;
     padding: 5px;
     padding-inline: 2vw;
-    color: white;
 }
-nav > div:hover{
+/*Text enllaços*/
+nav > div > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+nav > div > a:hover{
     text-decoration: underline;
 }

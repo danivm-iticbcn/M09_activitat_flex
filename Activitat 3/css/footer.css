@@ -1,13 +1,36 @@
+/*Caixa del footer*/
 footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: grey;
+    background-color: black;
     color: white;
+    justify-content: space-between;
+    align-items: center;
 }
-footer > div{
-    width: 3vw;
+/*Fer que tot estigui en row i centrar verticalment*/
+.contacte, .correo, .tel{
+    display: flex;
+    justify-content: row;
+    align-items: center;
 }
-footer > div > img{
-    width: 100%;
+/*Ajustem la caixa de les imatges*/
+.contimg{
+    width: 2vw;
+    margin-left: 2vw;
+    margin-right: 5px;
+    padding: 5px;
+}
+/*Imatge amb el maxim de la seva caixa*/
+.contimg > img{
+    width: 100%
+}
+
+.cobertsfoot{
+    margin-right: 2vw;
+}
+
+/*Ajustem totes les mides dels textos*/
+.footertxt{
+    font-size: 13px;
 }
