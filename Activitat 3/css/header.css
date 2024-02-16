@@ -10,7 +10,7 @@ header{
     background-color: black;
     z-index: 1;
 }
-/*El menu senser*/
+/*El menu de navegacio*/
 nav{
     display: flex;
     flex-direction: row;

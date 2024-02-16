@@ -9,13 +9,13 @@ main{
 /*CAIXA GENERAL (SECTIONS)*/
 .sections{
     width: 60vw;
-    margin-bottom: 11vh;
+    margin-bottom: 13vh;
 }
 /*H2 (TOTS)*/
 h2{
     font-size: 1.6em;
     font-weight: bold;
-    margin-bottom: 6vh;
+    margin-bottom: 7vh;
 }
 /*ORDENEM AMB FLOAT*/
 .img-nosaltres1{
@@ -29,13 +29,13 @@ h2{
 .info1{
     float: right;
     width: 40vw;
-    height: 32vh;
+    height: 24vh;
     margin-top: 3vh;
 }
 .info2{
     float: left;
     width: 40vw;
-    margin-top: 4vh;
+    margin-top: 6vh;
 }
 .img-nosaltres1 > img, .img-nosaltres2 > img{
     width: 100%;
@@ -58,10 +58,11 @@ h2{
 .elmenu{
     grid-area: elmenu;
     text-align: center;
-    background-color: rgb(25, 25, 85);
+    background-color: rgb(9, 9, 48);
     color: white;
     padding: 6px;
     font-size: 1.4em;
+    font-weight: bold;
 }
 .elmenu1{
     border: solid black 1px;
@@ -75,7 +76,7 @@ h2{
 }
 .img1c1{
     grid-area: img1c1;
-    display: block;
+    position: relative;
 }
 .img2c1{
     grid-area: img2c1;
@@ -99,6 +100,7 @@ h2{
 .menucontainer > div > img{
     width: 100%;
     height: auto;
+    display: block;
 }
 .menucontainer > div > h4{
     font-size: 1.5em;
@@ -107,7 +109,23 @@ h2{
 .menucontainer > div > span{
     font-size: 1em;
 }
-
+.overlay{
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding-block: 15px;
+    text-align: center;
+}
+.img1c1:hover .overlay {
+    opacity: 1;
+}
 
 /**/
 /**************************GALERIA*************************/
