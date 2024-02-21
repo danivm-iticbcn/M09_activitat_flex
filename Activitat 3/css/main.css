@@ -77,9 +77,16 @@ h2{
 .img1c1{
     grid-area: img1c1;
     position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1%;
 }
 .img2c1{
     grid-area: img2c1;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1%;
 }
 .elmenu2{
     border: solid black 1px;
@@ -93,9 +100,17 @@ h2{
 }
 .img1c2{
     grid-area: img1c2;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1%;
 }
 .img2c2{
     grid-area: img2c2;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1%;
 }
 .menucontainer > div > img{
     width: 100%;
@@ -106,16 +121,16 @@ h2{
     font-size: 1.5em;
     font-weight: bold;
 }
-.menucontainer > div > span{
+.menucontainer  div  span{
     font-size: 1em;
 }
 .overlay{
     position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    bottom: 0;
+    margin-bottom: 1%;
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1; 
-    width: 100%;
+    width: 98%;
     transition: .5s ease;
     opacity:0;
     color: white;
@@ -123,9 +138,17 @@ h2{
     padding-block: 15px;
     text-align: center;
 }
-.img1c1:hover .overlay {
+/*Mostrem el nom de cada plat*/
+.img1c1 .overlay, .img2c1 .overlay, .img1c2 .overlay, .img2c2 .overlay{
     opacity: 1;
 }
+/*Afegim un hover per saber quan ets amunt d'un plat*/
+.img1c1:hover .overlay, .img2c1:hover .overlay, .img1c2:hover .overlay, .img2c2:hover .overlay{
+    font-size: 1.4em;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.8);
+}
+
 
 /**/
 /**************************GALERIA*************************/
