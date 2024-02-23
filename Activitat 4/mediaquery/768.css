@@ -55,8 +55,8 @@
         float: left;
     }
     .img-nosaltres2{
-        width: 100%;
         float: left;
+        width: 100%;
     }
     .info1{
         float: right;
@@ -71,5 +71,32 @@
     /*Borde rodo de les imatges*/
     .img-nosaltres1 > img, .img-nosaltres2 > img{
         border-radius: 1%;
+    }
+    /**********************MENU - CARTA**********************/
+    .menucontainer{
+        grid-template-columns: 15% 85%;
+        grid-template-areas: "elmenu elmenu"
+                             "elmenu1 contm1"
+                             "elmenu1 img1c1"
+                             "elmenu1 img2c1"
+                             "elmenu2 contm2"
+                             "elmenu2 img1c2"
+                             "elmenu2 img2c2";
+        gap: 20px 10px;
+    }
+
+    /**********************GALERIA IMATGES**********************/
+    .galeria{
+        gap: 3vh 15vw;
+    }
+    .fotogaleria{
+        width: 30vw;
+    }
+    /**********************FOOTER**********************/
+    footer{
+        justify-content: center;
+    }
+    .contacte_section{
+        margin-right: 6vw;
     }
 }
