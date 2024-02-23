@@ -1,0 +1,75 @@
+/*Tablet 768px*/
+@media only screen and (max-width: 768px){
+    /********************MENU - HEADER**********************/
+    /*Fons de capcelera*/
+    header{
+        background-color: white;
+    }
+    /*On comenca el elements del nav*/
+    nav{
+        justify-content: start;
+    }
+    /*Color del text*/
+    nav > div > a{
+        color: black;
+    }
+    /*Hover dels elements del menu*/
+    nav > div > a:hover{
+        text-decoration-color: black;
+    }
+    /********************INTRODUCCIO - FOTO PRINCIPAL********************/
+    /*Mida imatge principal*/
+    .titol{
+        height: 70vh;
+        margin-bottom: 4vh;
+    }
+    /*Caixa del text*/
+    .titol > div{
+        top: 22vh;
+        left: 12vw;
+        border: none;
+        width: 70vw;
+        padding: 0;
+    }
+    /*Text*/
+    h1, .navtxt{
+        color: white;
+        padding: 0;
+    }
+    /*Opaquem la imatge per que el blanc es pugi llegir*/
+    .titol > img{
+        filter: brightness(50%);
+    }
+    /*********************SOBRE NOSALTRES*********************/
+    /*Canviar la mida de les caixes sections*/
+    .sections{
+        width: 80vw;
+        margin-bottom: 9vh;
+    }
+    h2{
+        margin-bottom: 5vh;
+    }
+    /*Canviar orde de les imatges i text amb float*/
+    .img-nosaltres1{
+        width: 100%;
+        float: left;
+    }
+    .img-nosaltres2{
+        width: 100%;
+        float: left;
+    }
+    .info1{
+        float: right;
+        width: 100%;
+        margin-top: 2vh;
+    }
+    .info2{
+        float: right;
+        width: 100%;
+    }
+    /**/
+    /*Borde rodo de les imatges*/
+    .img-nosaltres1 > img, .img-nosaltres2 > img{
+        border-radius: 1%;
+    }
+}
