@@ -1,0 +1,40 @@
+@media only screen and (max-width: 576px){
+    /*Imatge principal*/
+    .titol{
+        height: 60vh;
+    }
+    /*Titols h2*/
+    h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    /*Caixa de sections*/
+    .sections{
+        width: 90vw;
+    }
+    /**/
+    /**********************MENU - CARTA**********************/
+    .menucontainer{
+        grid-template-columns: 15% 85%;
+        grid-template-areas: "elmenu1 elmenu1"
+                             "contm1 contm1"
+                             "img1c1 img1c1"
+                             "img2c1 img2c1"
+                             "elmenu2 elmenu2"
+                             "contm2 contm2"
+                             "img1c2 img1c2"
+                             "img2c2 img2c2";
+        gap: 20px 10px;
+    }
+    /**********************GALERIA IMATGES**********************/
+    .fotogaleria{
+        width: 100%;
+    }
+    /**********************FOOTER**********************/
+    footer > section > span{
+        display: none;
+    }
+
+
+}

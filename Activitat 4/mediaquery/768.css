@@ -50,22 +50,29 @@
         margin-bottom: 5vh;
     }
     /*Canviar orde de les imatges i text amb float*/
+    .container-nosaltres{
+        display: flex;
+        flex-direction: column;
+    }
     .img-nosaltres1{
         width: 100%;
-        float: left;
-    }
-    .img-nosaltres2{
-        float: left;
-        width: 100%;
+        order: 1;
     }
     .info1{
-        float: right;
         width: 100%;
+        order: 2;
         margin-top: 2vh;
     }
-    .info2{
-        float: right;
+    /*2*/
+    .img-nosaltres2{
         width: 100%;
+        order: 3;
+
+    }
+    .info2{
+        width: 100%;
+        order: 4;
+        margin-top: 2vh;
     }
     /**/
     /*Borde rodo de les imatges*/
