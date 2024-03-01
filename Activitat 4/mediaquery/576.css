@@ -27,6 +27,9 @@
                              "img2c2 img2c2";
         gap: 20px 10px;
     }
+    .elmenu{
+        display: none;
+    }
     /**********************GALERIA IMATGES**********************/
     .fotogaleria{
         width: 100%;
@@ -35,6 +38,4 @@
     footer > section > span{
         display: none;
     }
-
-
 }

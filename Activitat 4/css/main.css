@@ -18,25 +18,25 @@ h2{
     margin-bottom: 7vh;
 }
 /*ORDENEM AMB FLOAT*/
-.img-nosaltres1{
-    width: 18vw;
-    float: left;
+#cn1{
+    height: 38vh;
 }
-.img-nosaltres2{
-    width: 18vw;
-    float: right;
+.img-nosaltres1{
+    width: 30%;
+    float: left;
 }
 .info1{
     float: right;
-    width: 40vw;
-    height: 24vh;
-    margin-top: 3vh;
+    width: 65%;
     font-size: 0.9em;
+}
+.img-nosaltres2{
+    width: 30%;
+    float: right;
 }
 .info2{
     float: left;
-    width: 40vw;
-    margin-top: 6vh;
+    width: 65%;
     font-size: 0.9em;
 }
 .img-nosaltres1 > img, .img-nosaltres2 > img{
