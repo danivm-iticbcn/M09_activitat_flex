@@ -1,0 +1,110 @@
+/*Tablet 768px*/
+@media only screen and (max-width: 768px){
+    /********************MENU - HEADER**********************/
+    /*Fons de capcelera*/
+    header{
+        background-color: white;
+    }
+    /*On comenca el elements del nav*/
+    nav{
+        justify-content: start;
+    }
+    /*Color del text*/
+    nav > div > a{
+        color: black;
+    }
+    /*Hover dels elements del menu*/
+    nav > div > a:hover{
+        text-decoration-color: black;
+    }
+    /********************INTRODUCCIO - FOTO PRINCIPAL********************/
+    /*Mida imatge principal*/
+    .titol{
+        height: 70vh;
+        margin-bottom: 4vh;
+    }
+    /*Caixa del text*/
+    .titol > div{
+        top: 22vh;
+        left: 12vw;
+        border: none;
+        width: 70vw;
+        padding: 0;
+    }
+    /*Text*/
+    h1, .navtxt{
+        color: white;
+        padding: 0;
+    }
+    /*Opaquem la imatge per que el blanc es pugi llegir*/
+    .titol > img{
+        filter: brightness(50%);
+    }
+    /*********************SOBRE NOSALTRES*********************/
+    /*Canviar la mida de les caixes sections*/
+    .sections{
+        width: 80vw;
+        margin-bottom: 9vh;
+    }
+    h2{
+        margin-bottom: 5vh;
+    }
+    /*Canviar orde de les imatges i text amb float*/
+    .container-nosaltres{
+        display: block;
+    }
+    /*1*/
+    .img-nosaltres1{
+        width: 100%;
+        float: right;
+    }
+    .info1{
+        float: left;
+        width: 100%;
+        font-size: 0.9em;
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+    }
+    /*2*/
+    .img-nosaltres2{
+        width: 100%;
+        float: left;
+    }
+    .info2{
+        font-size: 0.9em;
+        width: 100%;
+        float: left;
+        margin-top: 2vh;
+    }
+    /**/
+    /*Borde rodo de les imatges*/
+    .img-nosaltres1 > img, .img-nosaltres2 > img{
+        border-radius: 1%;
+    }
+    /**********************MENU - CARTA**********************/
+    .menucontainer{
+        grid-template-columns: 15% 85%;
+        grid-template-areas: "elmenu elmenu"
+                             "elmenu1 contm1"
+                             "elmenu1 img1c1"
+                             "elmenu1 img2c1"
+                             "elmenu2 contm2"
+                             "elmenu2 img1c2"
+                             "elmenu2 img2c2";
+        gap: 20px 10px;
+    }
+    /**********************GALERIA IMATGES**********************/
+    .galeria{
+        gap: 3vh 19vw;
+    }
+    .fotogaleria{
+        width: 30vw;
+    }
+    /**********************FOOTER**********************/
+    footer{
+        justify-content: center;
+    }
+    .contacte_section{
+        margin-right: 5vw;
+    }
+}
