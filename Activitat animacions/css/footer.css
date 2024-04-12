@@ -1,0 +1,32 @@
+/*Caixa del footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 2s;
+}
+/*Fer que tot estigui en row i centrar verticalment*/
+.contacte_container, .contacte_section{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+}
+/*Ajustem les icones*/
+.material-symbols-outlined{
+    padding-block: 2vh;
+    padding-inline: 1.5vh;
+}
+
+.contacte_section{
+    margin-right: 2.5vw;
+}
+
+/*Ajustem totes les mides dels textos*/
+.footertxt{
+    font-size: 0.8em;
+}
+

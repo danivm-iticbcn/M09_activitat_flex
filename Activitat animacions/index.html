@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant els coberts</title>
+    <!--Enllaços als estils-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/introducio.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--Icones-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Media Query-->
+    <link rel="stylesheet" href="mediaquery/768.css">
+    <link rel="stylesheet" href="mediaquery/576.css">
+    <!--Dark Mode-->
+    <link rel="stylesheet" href="dark/dark.css">
+    <!--Flavicon-->
+    <link rel="icon" type="image/x-icon" href="img/flavicon.png">
+</head>
+<body>
+    <!--Cap amb el menu de la pagina web-->
+    <header>
+        <nav>
+            <div><a href="#sobrenosaltres">Nosaltres</a></div>
+            <div><a href="#carta">Carta</a></div>
+            <div><a href="#galeriaImg">Galeria</a></div>
+        </nav>
+    </header>
+    <!--TITOL AMB IMATGE DE FONS-->
+    <section class="titol">
+        <!--La imatge primer ja que sino el text tambe quedara opacat-->
+        <picture>
+            <source media="(min-width:768px)" srcset="img/cap768.webp">
+            <source media="(min-width:576px)" srcset="img/cap576.webp">
+            <img class="cap" alt="imatge de presentacio del restaurant els coberts" src="img/cap.webp">
+        </picture>
+        <div><h1 class="navtxt">Restaurant els coberts</h1><span class="navtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></div>
+    </section>
+    <!--Comenca el contingut de la web-->
+    <main>
+        <!--APARTAT DE SOBRE NOSALTRES-->
+        <section class="sections">
+            <h2 id="sobrenosaltres">Sobre Nosaltres</h2>
+            <article class="container-nosaltres" id="cn1">
+                <div class="img-nosaltres1">
+                    <img alt="presentacio de la sala principal amb taules del restaurant" src="img/rst.jpg">
+                </div>
+                <div class="info1"><span>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span></div>
+            </article>
+            <article class="container-nosaltres">
+                <div class="img-nosaltres2">
+                    <img alt="presentacio sala baixa amb un estil mes acollidor" src="img/entrada_resc.jpg">
+                </div>
+                <div class="info2"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span></div>
+            </article>
+        </section>
+        <!--MENU AMB GRID-->
+        <section class="sections">
+            <h2 id="carta">Carta</h2>
+            <article class="menucontainer">
+                <div class="elmenu"><span>Menú</span></div>
+                <div class="elmenu1"><h3>Menu 1</h3></div>
+                <div class="contm1"><h4>Contingut</h4><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span></div>
+                <div class="img1c1"><img alt="mostra del primer plat, es un ramen japones" src="img/ramen.jpg"><span class="overlay">Ramen</span></div>
+                <div class="img2c1"><img alt="mostra del segon plat, es salmo a la planxa" src="img/salmon.jpg"><span class="overlay">Salmon</span></div>
+                <div class="elmenu2"><h3>Menu 2</h3></div>
+                <div class="contm2"><h4>Contingut</h4><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span></div>
+                <div class="img1c2"><img alt="mostra del primer plat, es carn asada" src="img/lasagna_resc.jpg"><span class="overlay">Lasaña</span></div>
+                <div class="img2c2"><img alt="mostra del segon plat, es un yogurt natural amb maduixa i gerds" src="img/yogurt.jpg"><span class="overlay">Iogurt</span></div>
+            </article>
+        </section>
+        <!--GALERIA FOTOS-->
+        <section class="sections">
+            <h2 id="galeriaImg">Galeria d'imatges</h2>
+            <article class=galeria>
+                <div class="fotogaleria"><img class="amanida fosc" src="img/salad.jpg" alt="Mostra d'un plat d'amanida"></div>
+                <div class="fotogaleria"><img class="amanida" src="img/amanida2_resc.png" alt="Mostra d'un plat d'amanida"></div>
+                <div class="fotogaleria"><img class="amanida" src="img/salad.jpg" alt="Mostra d'un plat d'amanida"></div>
+                <div class="fotogaleria"><img class="amanida fosc" src="img/amanida2_resc.png" alt="Mostra d'un plat d'amanida"></div>
+                <div class="fotogaleria"><img class="amanida fosc" src="img/salad.jpg" alt="Mostra d'un plat d'amanida"></div>
+                <div class="fotogaleria"><img class="amanida" src="img/amanida2_resc.png" alt="Mostra d'un plat d'amanida"></div> 
+                <div class="fotogaleria"><img class="amanida " src="img/salad.jpg" alt="Mostra d'un plat d'amanida"></div> 
+                <div class="fotogaleria"><img class="amanida fosc" src="img/amanida2_resc.png" alt="Mostra d'un plat d'amanida"></div>
+            </article>
+        </section>
+    </main>
+    <!--PEU DE PÀGINA-->
+    <footer>
+        <section class="contacte_container">
+            <article class="contacte_section">
+                <span class="material-symbols-outlined">mail</span>
+                <span class="footertxt">elscobert@mail.com</span>
+            </article>
+            <article class="contacte_section">
+                <span class="material-symbols-outlined">call</span>
+                <span class="footertxt">+34 698 75 43 21</span>
+            </article>
+        </section>
+        <section class="contacte_section">
+            <span class="footertxt">&copy Els coberts</span>
+        </section>
+    </footer>
+</body>
+</html>
