@@ -4,7 +4,6 @@
 }
 /*Caixa amb text*/
 .titol > div{
-    border: solid black 2px;
     width: 30vw;
     padding: 10px;
     position: absolute;
@@ -29,19 +28,17 @@ h1{
 
 .caja > *, .caja{
     animation-name: animacioIntro;
-    animation-duration: 5s;
+    animation-duration: 4.5s;
+    animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);
 }
 
 @keyframes animacioIntro{
     0%{
         top: 60vh;
-        border: none;
         opacity: 0;
     }
-    55%{
-        top: 40vh;
+    35%{
         color: orange;
-        border: none;
     }
     100%{
         top: 22vh;
