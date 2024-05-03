@@ -91,13 +91,13 @@
         </section>
         <section class="sections">
             <h2 id="videos">Videos del restaurant</h2>
-            <article class="video-section">
+            <article class="video-section" onscroll="pl_scroll()">
                 <div class="video-container">
                     <div class="overlay-vd">
                         <button onclick="play_stop()" id="play_bt" class="bt"><span id="pl_st" class="material-symbols-outlined">play_circle</span></button>
-                        <button onclick="volume()" id="volume" class="bt"><span id="vol" class="material-symbols-outlined">volume_up</span></button>
+                        <button onclick="volume()" id="volume" class="bt"><span id="vol" class="material-symbols-outlined">volume_off</span></button>
                     </div>
-                    <video id="vid" class="vd">
+                    <video id="vid" class="vd" muted>
                         <source src="video/video_restaurant.mp4" type="video/mp4">
                         <source src="video/video_restaurant.webm" type="video/webm">
                         <source src="video/video_restaurant.ogg" type="video/ogg">
@@ -134,9 +134,11 @@
 
     </script>
     <script>
+        var video = document.getElementById("vid");
+        var playSpan = document.getElementById("pl_st");
+        var volSpan = document.getElementById("vol");
+
         function play_stop(){
-            var playSpan = document.getElementById("pl_st");
-            var video = document.getElementById("vid");
             /*Comprobem i canviem*/
             if (video.paused){
                 video.play();
@@ -148,8 +150,6 @@
         }
 
         function volume(){
-            var video = document.getElementById("vid");
-            var volSpan = document.getElementById("vol");
             /*Comprobem volum i canviem*/
             if (video.muted){
                 video.muted = false;
@@ -160,8 +160,24 @@
             }
         }
 
-
-
+        function pl_scroll(){
+            /*Elements necesaris per saber si el video hi es dins del viewport*/
+            var videoTop = video.getBoundingClientRect().top;
+            var videoHeight = video.offsetHeight;
+            var windowHeight = window.innerHeight;
+            /*Comprobem que el top del video hi es a dins*/
+            if (videoTop <= windowHeight && videoTop + videoHeight >= 0) {
+                video.play();
+                console.log("play");
+                playSpan.innerHTML = "pause_circle";
+            } else {
+                video.pause();
+                console.log("pause");
+                playSpan.innerHTML = "play_circle";
+            }
+        }
+        /*Afegim event de scroll amb la funcio*/
+        window.addEventListener('scroll', pl_scroll);
     </script>
 </body>
 </html>
