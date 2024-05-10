@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant els coberts</title>
     <!--Enllaços als estils-->
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/introducio.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -25,15 +25,15 @@
 </head>
 <body>
     <!--Cap amb el menu de la pagina web-->
-    <header>
-        <nav>
-            <div><a href="#sobrenosaltres">Nosaltres</a></div>
-            <div><a href="#carta">Carta</a></div>
-            <div><a href="#galeriaImg">Galeria</a></div>
-        </nav>
-    </header>
+    
+    <nav id="navbar">
+        <div><a class="nava" href="#sobrenosaltres">Nosaltres</a></div>
+        <div><a class="nava" href="#carta">Carta</a></div>
+        <div><a class="nava" href="#galeriaImg">Galeria</a></div>
+    </nav>
+    
     <!--TITOL AMB IMATGE DE FONS-->
-    <section class="titol">
+    <header class="titol">
         <!--La imatge primer ja que sino el text tambe quedara opacat-->
         <picture>
             <source media="(min-width:768px)" srcset="img/cap768.webp">
@@ -41,7 +41,7 @@
             <img class="cap" alt="imatge de presentacio del restaurant els coberts" src="img/cap.webp">
         </picture>
         <div class="caja"><h1 class="navtxt">Restaurant els coberts</h1><span class="navtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></div>
-    </section>
+    </header>
     <!--Comenca el contingut de la web-->
     <main>
         <!--APARTAT DE SOBRE NOSALTRES-->
@@ -91,7 +91,7 @@
         </section>
         <section class="sections">
             <h2 id="videos">Videos del restaurant</h2>
-            <article class="video-section" onscroll="pl_scroll()">
+            <article class="video-section">
                 <div class="video-container">
                     <div class="overlay-vd">
                         <button onclick="play_stop()" id="play_bt" class="bt"><span id="pl_st" class="material-symbols-outlined">play_circle</span></button>
@@ -178,6 +178,23 @@
         }
         /*Afegim event de scroll amb la funcio*/
         window.addEventListener('scroll', pl_scroll);
+
+        window.onscroll = function() {canviarMenu()};
+
+        function canviarMenu() {
+            var menu = document.getElementById("navbar");
+            var pos = document.documentElement.scrollTop;
+            if (pos > 50){
+                menu.style.height = "60px";
+                menu.style.fontSize = "1em";
+            } else{
+                menu.style.height = "90px";
+                menu.style.fontSize = "1.2em";
+            }
+
+            
+        }
+
     </script>
 </body>
 </html>
